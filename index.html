@@ -1,13 +1,170 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ravi Kant — Electrical & Data Science Engineer. Backend, AI/ML and Embedded Systems.">
+  <title>Ravi Kant | Electrical & Data Science Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">Ravi Kant<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <p class="eyebrow">Electrical Engineering × Data Science</p>
+        <h1>Hi, I'm <span>Ravi Kant</span></h1>
+        <h2>Electrical & Data Science Engineer</h2>
+        <p class="hero-text">I build practical systems at the intersection of backend engineering, AI/ML, embedded systems and electrical engineering.</p>
+        <div class="buttons">
+          <a class="button primary" href="#projects">View Projects ↗</a>
+          <a class="button secondary" href="#contact">Let's Connect</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/Kantdrav" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/ravi-kant/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="mailto:ravi.kant.dev@gmail.com">Email ↗</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-hidden="true">
+        <div class="grid"></div>
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="core">RK</div>
+        <span class="node node-a">AI</span>
+        <span class="node node-b">API</span>
+        <span class="node node-c">IoT</span>
+        <span class="node node-d">EE</span>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-label">01 / About</div>
+      <div class="section-body">
+        <h2>Curious about how things work. Serious about making them <span>work well.</span></h2>
+        <p>I am an Electrical Engineering student at IITRAM with a parallel BS in Data Science and Applications from IIT Madras. My interests span backend systems, AI/ML, embedded systems and engineering applications of data.</p>
+        <p>I enjoy working across layers — from sensors and microcontrollers to APIs, data pipelines and machine-learning systems.</p>
+      </div>
+    </section>
+
+    <section id="education" class="section container">
+      <div class="section-label">02 / Education</div>
+      <div class="cards two">
+        <article class="info-card">
+          <span class="number">01</span>
+          <h3>B.Tech — Electrical Engineering</h3>
+          <p>IITRAM, Ahmedabad</p>
+          <small>2023–2027</small>
+        </article>
+        <article class="info-card">
+          <span class="number">02</span>
+          <h3>BS — Data Science and Applications</h3>
+          <p>Indian Institute of Technology Madras</p>
+          <small>2021–Present</small>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <div class="section-label">03 / Skills</div>
+      <div class="skills">
+        <div><strong>Programming</strong><span>Python · Java · C · SQL · Bash</span></div>
+        <div><strong>Backend</strong><span>Flask · REST APIs · JWT · RBAC · Redis · Celery</span></div>
+        <div><strong>Data & AI</strong><span>Data Science · Machine Learning · PyTorch · TensorFlow · ONNX</span></div>
+        <div><strong>Systems</strong><span>Linux · Git · Docker · System Design · DSA</span></div>
+        <div><strong>Embedded</strong><span>ESP32 · Arduino · Microprocessors · Sensors</span></div>
+        <div><strong>Electrical</strong><span>Control Systems · Power Systems · Digital Electronics</span></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-label">04 / Projects</div>
+      <div class="project-list">
+        <article class="project">
+          <span class="project-number">01</span>
+          <div>
+            <p class="tag">Backend · Scalable Systems</p>
+            <h3>Quiz Master V2</h3>
+            <p>Scalable examination platform with REST APIs, JWT authentication, role-based access control, Redis caching and Celery background jobs.</p>
+            <div class="tags"><span>Flask</span><span>Vue.js</span><span>SQLite</span><span>Redis</span><span>Celery</span></div>
+          </div>
+          <a href="https://github.com/Kantdrav" target="_blank" rel="noopener noreferrer" aria-label="Quiz Master GitHub">↗</a>
+        </article>
+
+        <article class="project">
+          <span class="project-number">02</span>
+          <div>
+            <p class="tag">AI · Research</p>
+            <h3>LLM Compression</h3>
+            <p>Research-oriented implementation of tensor-network and Matrix Product Operator approaches for reducing language-model parameter footprint.</p>
+            <div class="tags"><span>Python</span><span>PyTorch</span><span>MPO</span><span>Tensor Networks</span></div>
+          </div>
+          <a href="https://github.com/Kantdrav/llm_compression" target="_blank" rel="noopener noreferrer" aria-label="LLM Compression GitHub">↗</a>
+        </article>
+
+        <article class="project">
+          <span class="project-number">03</span>
+          <div>
+            <p class="tag">Embedded · IoT</p>
+            <h3>ESP32 Health Sensor</h3>
+            <p>ESP32-based monitoring system integrating sensors, OLED display, Wi-Fi connectivity and a web interface for live readings.</p>
+            <div class="tags"><span>ESP32</span><span>Arduino</span><span>MAX30100</span><span>OLED</span><span>IoT</span></div>
+          </div>
+          <a href="https://github.com/Kantdrav" target="_blank" rel="noopener noreferrer" aria-label="ESP32 project GitHub">↗</a>
+        </article>
+
+        <article class="project">
+          <span class="project-number">04</span>
+          <div>
+            <p class="tag">Robotics · Control</p>
+            <h3>e-Yantra KrishiBalancer</h3>
+            <p>Robotics project involving simulation, PID control, ZMQ communication and hardware/software integration.</p>
+            <div class="tags"><span>Python</span><span>CoppeliaSim</span><span>ZMQ</span><span>PID</span></div>
+          </div>
+          <a href="https://github.com/Kantdrav" target="_blank" rel="noopener noreferrer" aria-label="KrishiBalancer GitHub">↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="research" class="section container">
+      <div class="section-label">05 / Research & Experience</div>
+      <div class="timeline">
+        <div><span>01</span><article><small>AI / ML</small><h3>LLM compression with tensor networks</h3><p>Exploring MPO-based model compression, parameter efficiency and model behavior after compression.</p></article></div>
+        <div><span>02</span><article><small>Electrical / Control</small><h3>PLL and control-system research</h3><p>Studying SOGI-based and moving-average-filter-based PLL structures, orthogonal signal generation and filtering.</p></article></div>
+        <div><span>03</span><article><small>Embedded Systems</small><h3>Microcontrollers and sensor systems</h3><p>Hands-on work with ESP32, sensors, displays, communication interfaces and embedded control.</p></article></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <div>
+        <div class="section-label">06 / Contact</div>
+        <h2>Let's build something <span>useful.</span></h2>
+        <p>I'm interested in backend engineering, AI/ML, data science, embedded systems and electrical engineering opportunities.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:ravi.kant.dev@gmail.com">ravi.kant.dev@gmail.com ↗</a>
+        <a href="https://github.com/Kantdrav" target="_blank" rel="noopener noreferrer">github.com/Kantdrav ↗</a>
+        <a href="https://www.linkedin.com/in/ravi-kant/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>Ravi Kant<span class="accent">.</span></span>
+    <span>© <span id="year"></span> · Built with HTML & CSS</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
