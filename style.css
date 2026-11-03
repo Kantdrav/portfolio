@@ -38,3 +38,30 @@
     margin:0 0 30px;
   }
 }
+
+
+/* Hero presentation photograph replaces the abstract orbit graphic */
+.hero-photo-wrap{
+  height:470px;
+  width:100%;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:var(--panel);
+}
+.hero-photo{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 38%;
+  filter:saturate(.94) contrast(1.04);
+}
+@media(max-width:800px){
+  .hero-photo-wrap{
+    height:min(115vw,440px);
+    margin-top:48px;
+  }
+  .hero-photo{
+    object-position:center 38%;
+  }
+}
